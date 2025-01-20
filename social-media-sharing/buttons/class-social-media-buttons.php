@@ -16,7 +16,7 @@ class SocialMediaButtons {
     private function generateButtonHtml($platform_name, $url) {
         return '
         <a href="' . esc_url($url) . '" target="_blank" class="social-button ' . strtolower($platform_name) . '" title="Share on ' . esc_html($platform_name) . '">
-            <i class="fa fa-' . strtolower($platform_name) . '"></i> ' . esc_html($platform_name) . '
+        ' . esc_html($platform_name) . '
         </a>';
     }
 }
